@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FFF23CF-4AF1-4C4C-B70F-DC489A6CEF60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AplicacionStock</RootNamespace>
+    <AssemblyName>AplicacionStock</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CACCC12ED243B6F48897FA460D4B3105F45C164F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AplicacionStock_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controlador\LINQProductos.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LINQProductos.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Controlador\LINQVistaProductos.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LINQVistaProductos.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Alerta.cs" />
+    <Compile Include="Modelo\AlertaAgregar.cs" />
+    <Compile Include="Modelo\AlertaEliminar.cs" />
+    <Compile Include="Modelo\AlertaModificar.cs" />
+    <Compile Include="Vista\VentanaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VentanaLogin.Designer.cs">
+      <DependentUpon>VentanaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VentanaAgregarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VentanaAgregarProd.Designer.cs">
+      <DependentUpon>VentanaAgregarProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VentanaEliminarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VentanaEliminarProd.Designer.cs">
+      <DependentUpon>VentanaEliminarProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VentanaModificarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VentanaModificarProd.Designer.cs">
+      <DependentUpon>VentanaModificarProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VentanaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VentanaProductos.Designer.cs">
+      <DependentUpon>VentanaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="obj\Debug\AplicacionStock.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\AplicacionStock.Vista.Login.resources" />
+    <EmbeddedResource Include="obj\Debug\AplicacionStock.Vista._vntAgregarProd.resources" />
+    <EmbeddedResource Include="obj\Debug\AplicacionStock.Vista._vntEliminarProd.resources" />
+    <EmbeddedResource Include="obj\Debug\AplicacionStock.Vista._vntModificarProd.resources" />
+    <EmbeddedResource Include="obj\Debug\AplicacionStock._vntProd.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vista\VentanaLogin.resx">
+      <DependentUpon>VentanaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VentanaAgregarProd.resx">
+      <DependentUpon>VentanaAgregarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VentanaEliminarProd.resx">
+      <DependentUpon>VentanaEliminarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VentanaModificarProd.resx">
+      <DependentUpon>VentanaModificarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VentanaProductos.resx">
+      <DependentUpon>VentanaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".vs\AplicacionStock\config\applicationhost.config" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="bin\Debug\AplicacionStock.application" />
+    <None Include="bin\Debug\AplicacionStock.exe.config" />
+    <None Include="Controlador\LINQProductos.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LINQProductos.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Controlador\LINQProductos.dbml.layout">
+      <DependentUpon>LINQProductos.dbml</DependentUpon>
+    </None>
+    <None Include="Controlador\LINQVistaProductos.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LINQVistaProductos.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Controlador\LINQVistaProductos.dbml.layout">
+      <DependentUpon>LINQVistaProductos.dbml</DependentUpon>
+    </None>
+    <None Include="obj\Debug\AplicacionStock.application" />
+    <None Include="obj\Debug\AplicacionStock.csproj.CopyComplete" />
+    <None Include="obj\Debug\AplicacionStock.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\AplicacionStock.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\AplicacionStock.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include="bin\Debug\AplicacionStock.exe" />
+    <Content Include="bin\Debug\AplicacionStock.pdb" />
+    <Content Include="bin\Debug\app.publish\AplicacionStock.exe" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.xml" />
+    <Content Include="obj\Debug\AplicacionStock.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\AplicacionStock.exe" />
+    <Content Include="obj\Debug\AplicacionStock.pdb" />
+    <Content Include="obj\Debug\TempPE\Controlador.LINQProductos.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\AplicacionStock\v16\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

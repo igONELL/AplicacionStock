@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AplicacionStock.exe" version="1.0.0.0" publicKeyToken="a539dc61b96c5777" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AplicacionStock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AplicacionStock.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AplicacionStock.exe" size="36824">
+      <assemblyIdentity name="AplicacionStock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>87qBdOzdR2b55+JW3p3LwipsFc9lovxqlU1N+6JY52Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualBasic.PowerPacks.dll" size="352256">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ge3qaWpdQthkHqvQPFfRHEI2kVtIQVfVJ0MEY0RDClA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AplicacionStock.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X+GtgC9o18R9u9jmAWK6iKuu0WLaXTgchdPkk1MRli4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-32DQSDL\Igor" issuerKeyHash="8555b4cf49a996052fd7045e9db53e03c5975e2b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kHUVAU0oyMBaSpi8ZFVI4fNUkT2VnMTlS8kAug8uowA=</DigestValue></Reference></SignedInfo><SignatureValue>CLeQzubr9w+zSWL5sf+TyA8afx5XFvQvFnWPAiWwFWX/pJjNbtHdaAB/x4wZp1842c2Cru3xh/4b8Kz7CQbAEh91W4YKYFI5vGDL4eNA0b6JyxakohYXwVwX3svfRqDNhd0fnSOx3bF3ErJGq5g7x2iwACFeN6dHLlI4t0VznIU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yXmmoE1xVPZN+lqGFBi0odpjwlJcuSRYZSbbn6D2u8GZgbbNHGcyQGUS8mCMN1bwhOHryXxqB/+VPFWav+0+rximw088R0E0CEU+4xlwN6K5iRPLZYC+6Qx3hcppe2m/+tR9kRg7jodJMIdYiwRyvFQGL1RmOpA/mMpN3qybpTU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="00a32e0fba00c94be5c49c953d9154f3e1485564bc984a5ac0c8284d01157590" Description="" Url=""><as:assemblyIdentity name="AplicacionStock.exe" version="1.0.0.0" publicKeyToken="a539dc61b96c5777" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-32DQSDL\Igor</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Vpwu1RuofwI1MioMyiE/Ap+5S9tfz4WJ6qsJsFaYeEQ=</DigestValue></Reference></SignedInfo><SignatureValue>ROg9ZnorkVEPqeclKT+7rlCig4Td2vyku/SFu+7iZahs3T/hGvhu099KGj31AaJx8lo38VkN66+NojNcwbh3vl5E2IZ112glCvP2+7FwQjPN/7muTB4ksD4Wlu+OWRqe5mFk/SagBr6gLrdAB4e8lrlYV9k8c4Qvrz27mjki25o=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yXmmoE1xVPZN+lqGFBi0odpjwlJcuSRYZSbbn6D2u8GZgbbNHGcyQGUS8mCMN1bwhOHryXxqB/+VPFWav+0+rximw088R0E0CEU+4xlwN6K5iRPLZYC+6Qx3hcppe2m/+tR9kRg7jodJMIdYiwRyvFQGL1RmOpA/mMpN3qybpTU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQUe7ReI1+A4pN6CnxirRfKDANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtADMAMgBEAFEAUwBEAEwAXABJAGcAbwByMB4XDTIwMDcyNjAwMzUzNFoXDTIxMDcyNjA2MzUzNFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQAzADIARABRAFMARABMAFwASQBnAG8AcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyXmmoE1xVPZN+lqGFBi0odpjwlJcuSRYZSbbn6D2u8GZgbbNHGcyQGUS8mCMN1bwhOHryXxqB/+VPFWav+0+rximw088R0E0CEU+4xlwN6K5iRPLZYC+6Qx3hcppe2m/+tR9kRg7jodJMIdYiwRyvFQGL1RmOpA/mMpN3qybpTUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBkD6UEaZ4t2aE8ZUwcLr9jGkkxVCrn/OFoOwlz0j+bghbB777sy9bT0I9HYNIMMQvhM8nXOqZ1kWHb93yTW/eDJODFLC4MsCE4qomdqaGGWW3NYzbOxTt2GR6EbPqZvwtNRUqq2XeNkivJJTdvfbfCe9RRy4WeJArD1RxksE0Ojw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
